@@ -1,0 +1,77 @@
+/* Color Theme Swatches in Hex */
+.EcoCiclo-1-hex {
+  color: #3fbf48;
+}
+.EcoCiclo-2-hex {
+  color: #89d98e;
+}
+.EcoCiclo-3-hex {
+  color: #add9b0;
+}
+.EcoCiclo-4-hex {
+  color: #f2f2f2;
+}
+.EcoCiclo-5-hex {
+  color: #404040;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #3fbf48;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: #ffffff;
+}
+
+.logo-ecociclo {
+  width: 20vh;
+}
+
+.link-menu {
+  margin-left: 100px;
+  margin-right: 100px;
+  color: #404040;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.link-menu:hover {
+  color: #3fbf48;
+}
+
+.cadastro {
+  background-color: #3fbf48;
+  padding: 10px;
+  color: #404040;
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.pesquisa {
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 10px;
+  border: 1px solid #3fbf48;
+  padding: 10px;
+  background-color: #ffffff;
+  margin-left: 50px;
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+.link-whatsapp {
+  position: fixed;
+  cursor: pointer;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+}
