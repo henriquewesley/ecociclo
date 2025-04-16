@@ -1,32 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Ecociclo</title>
-  </head>
 
-  <body>
-    <div class="corpo-inteiro">
-      <header>
-        <img
-          src="./img/Green and White Circle Icon Organic Food Logo.png"
-          alt="logo-ecociclo"
-          class="logo-ecociclo"
-        />
-        <a class="link-menu">A ECOCICLO</a>
-        <a class="link-menu">NOSSOS SERVIÇOS</a>
-        <a class="link-menu">SEJA UM PARCEIRO</a>
-        <button class="cadastro">CADASTRE-SE</button>
-        <input class="pesquisa" placeholder="Pesquise algo" />
-      </header>
-      <a
-        href="https://wa.me/+5571983544689?text=Ol%C3%A1%20Ecociclo%2C%20quero%20mais%20informa%C3%A7%C3%B5es."
-        target="_blank"
-      >
-        <img src="./img/whatsapp.png" alt="logo-whatsapp" class="link-whatsapp"
-      /></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/jpg" href="./assets/logo.png" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Ecociclo</title>
+</head>
+
+<body>
+  <header class="cabecalho">
+    <nav class="container navegacao">
+      <div class="logo">
+        Ecociclo
+      </div>
+      <ul class="menu">
+        <li><a href="#sobre">SOBRE NÓS</a></li>
+        <li><a href="#servicos">DESTAQUES</a></li>
+        <li><a href="#parceiros">SEJA UM PARCEIRO</a></li>
+      </ul>
+      <!-- <button class="cadastro">CADASTRE-SE</button>
+      <input class="pesquisa" placeholder="Pesquise algo"/> -->
+    </nav>
+  </header>
+  <!--  <div class="mascara-formulario" onclick="esconderFormulario()"></div>
+      <form class="formulario-fale-conosco" action="https://formcarry.com/s/BveiW-TPqbR" method="POST"
+      enctype="multipart/form-data">
+      <input placeholder="Seu nome" type="text" name="nome" />
+      <input placeholder="Seu número de celular" type="tel" name="telefone" />
+      <textarea placeholder="Do que você precisa?" name="duvida"></textarea>
+      <button type="submit" class="botao">Enviar</button>
+      </form> -->
+  <div class="whatsapp"><a
+      href="https://wa.me/+5571983544689?text=Ol%C3%A1%20Ecociclo%2C%20quero%20mais%20informa%C3%A7%C3%B5es."
+      target="_blank">
+      <img src="./assets/whatsapp.png" alt="logo-whatsapp" class="link-whatsapp" /></a></div>
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div class="texto">
+        <h1>Juntos pela sustentabilidade</h1>
+        <p>A Ecociclo chegou para transformar a sua relação com a reciclagem!
+          <br><br>Imagine um mundo onde cada embalagem, cada
+          pedaço de papel, cada item que você não usa mais se torna uma oportunidade. Com a nossa plataforma inovadora,
+          reciclar vai muito além de uma obrigação: vira recompensa!
+
+          Aqui, você se conecta a um ecossistema inteligente que facilita a coleta seletiva, valoriza seus esforços com
+          pontos incríveis e te permite trocá-los por produtos e serviços que você realmente deseja.
+        </p>
+        <a href="#servicos" class="botao">Explorar</a>
+      </div>
+      <div class="imagem">
+        <img src="./assets/logo.png" alt="logo-ecociclo" class="logomarca" />
+      </div>
     </div>
-  </body>
+  </section>
+  <section class="servicos" id="servicos">
+    <h2>NOSSOS DIFERENCIAIS</h2>
+    <div class="container">
+      <div class="card">
+        <div class="icone">🤝</div>
+        <h3>Parcerias</h3>
+        <p>Estabelecer parcerias estratégicas com empresas, comércios e serviços locais para oferecer recompensas
+          exclusivas e relevantes para a comunidade de Camaçari.</p>
+      </div>
+      <div class="card">
+        <div class="icone">🎁</div>
+        <h3>Benefícios</h3>
+        <p>Fortalecer a economia local, oferecer recompensas mais atraentes e criar um senso de pertencimento.</p>
+      </div>
+      <div class="card">
+        <div class="icone">♻️</div>
+        <h3>Sustentabilidade</h3>
+        <p>A Ecociclo é mais do que uma plataforma de reciclagem - é uma revolução na maneira como você interage com o
+          seu mundo verde. </p>
+      </div>
+    </div>
+  </section>
+  <section class="parceiros" id="parceiros">
+    <h2>Quer saber mais e começar a fazer parte dessa transformação?</h2>
+    <p>Junte-se à comunidade Ecociclo e descubra como é fácil:<br><br>
+
+      Com a nossa plataforma, você não apenas descarta, mas também ganha recompensas por sua
+      contribuição para um mundo mais sustentável. Junte-se a nós e descubra como a reciclagem pode ser uma experiência
+      gratificante e transformadora.
+
+      Dar um novo ciclo aos seus resíduos: Diga adeus ao descarte sem propósito.
+      Acumular pontos valiosos: Sua atitude sustentável se transforma em benefícios reais.
+      Conquistar recompensas incríveis: Troque seus pontos por produtos, descontos e experiências que você vai amar.
+      Fazer a diferença para o planeta: Contribua ativamente para um futuro mais verde e consciente.
+      A Ecociclo é mais que uma plataforma, é um movimento em direção a um futuro mais sustentável, construído por
+      pessoas como você.
+
+      <br><br>Clique no link do WhatsApp ou fale conosco! 💚
+      <br><br><button onclick="mostrarFormulario()" class="botao"><a
+          href="https://wa.me/+5571983544689?text=Ol%C3%A1%20Ecociclo%2C%20quero%20mais%20informa%C3%A7%C3%B5es."
+          target="_blank">Entre em contato</a></button>
+    </p>
+  </section>
+  <footer>
+    <p>Desenvolvido por Wesley Henrique ® - Direitos reservados a Ecociclo - 2025.</p>
+  </footer>
+</body>
+<script src="./scripts.js"></script>
+
 </html>

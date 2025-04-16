@@ -2,15 +2,19 @@
 .EcoCiclo-1-hex {
   color: #3fbf48;
 }
+
 .EcoCiclo-2-hex {
   color: #89d98e;
 }
+
 .EcoCiclo-3-hex {
   color: #add9b0;
 }
+
 .EcoCiclo-4-hex {
   color: #f2f2f2;
 }
+
 .EcoCiclo-5-hex {
   color: #404040;
 }
@@ -20,32 +24,216 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Courier New", Courier, monospace;
-  background-color: #3fbf48;
 }
 
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
-  background-color: #ffffff;
-}
-
-.logo-ecociclo {
-  width: 20vh;
-}
-
-.link-menu {
-  margin-left: 100px;
-  margin-right: 100px;
+body {
+  background-color: #f2f2f2;
   color: #404040;
-  letter-spacing: 1px;
-  cursor: pointer;
-  background-color: #ffffff;
+  line-height: 1.5;
 }
 
-.link-menu:hover {
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.whatsapp img {
+  width: 70px;
+}
+
+.sobre img {
+  max-width: 500px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1300px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.botao {
+  background-color: #3fbf48;
+  color: #404040;
+  padding: 10px 20px;
+  margin-top: 30px;
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.cabecalho {
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  padding: 15px 0;
+  width: 100%;
+}
+
+.navegacao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
   color: #3fbf48;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 70px;
+  align-items: center;
+}
+
+.menu a {
+  color: #404040;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+section {
+  padding: 40px 0;
+  height: 100vh;
+}
+
+.sobre {
+  padding: 100px 0;
+  background-color: #add9b0;
+  display: flex;
+  flex-direction: row;
+}
+
+.sobre .container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.texto h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #404040;
+}
+
+.texto p {
+  display: flex;
+  color: #404040;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 80px;
+}
+
+.servicos {
+  background-color: #89d98e;
+}
+
+.servicos .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.icone {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.parceiros {
+  color: #3fbf48;
+  height: 85vh;
+
+}
+
+.parceiros h2 {
+  padding: 20px 110px;
+  text-align: justify;
+}
+
+.parceiros p {
+  text-align: justify;
+  padding: 20px 110px;
+}
+
+.parceiros .botao {
+  background-color: #3fbf48;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+footer {
+  display: flex;
+  color: #404040;
+  justify-content: center;
+  text-align: center;
+  height: 10vh;
+}
+
+/*
+.formulario-fale-conosco {
+  background-color: white;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  position: fixed;
+  top: 30%;
+  left: -309px;
+  padding: 20px;
+  border-radius: 5px;
+  transition: left 1s ease-in-out;
+}
+
+.formulario-fale-conosco input {
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding-left: 5px;
+  outline-color: #18d80f;
+}
+
+.formulario-fale-conosco textarea {
+  width: 270px;
+  height: 100px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding-left: 5px;
+  outline-color: #18d80f;
+}
+
+.mascara-formulario {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(109deg,
+      rgba(10, 12, 16, 0.99) 15%,
+      rgba(10, 12, 16, 0.7) 50%,
+      rgba(10, 12, 16, 0.99) 85%);
+  transition: visibility 1s ease-in-out;
 }
 
 .cadastro {
@@ -68,6 +256,21 @@ header {
   cursor: pointer;
 }
 
+.link-menu {
+  margin-left: 100px;
+  margin-right: 100px;
+  color: #404040;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.link-menu:hover {
+  color: #3fbf48;
+}
+
+
+
 .link-whatsapp {
   position: fixed;
   cursor: pointer;
@@ -75,3 +278,4 @@ header {
   right: 20px;
   width: 100px;
 }
+  */
