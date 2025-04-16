@@ -1,3 +1,10 @@
+let botao = document.querySelector(".botao-menu")
+let menu = document.querySelector(".menu")
+
+botao.addEventListener("click", () => {
+  menu.classList.toggle("ativo")
+})
+
 // const form = document.querySelector(".formulario-fale-conosco")
 // const mascara = document.querySelector(".mascara-formulario")
 
